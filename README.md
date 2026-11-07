@@ -8,6 +8,8 @@ branch, and opens a pull request.
 The name is the idea: the agent works the night shift. It polls, picks up work,
 and reports back while you are away.
 
+> 中文使用指南：[docs/usage.zh-CN.md](docs/usage.zh-CN.md)
+
 ```
 issue comment "@nightshift-bot fix the flaky login test"
         │
@@ -70,6 +72,18 @@ push branches and open pull requests.
 > the agent executes model-generated commands on your machine. Run it on a
 > dedicated machine or container, keep `allowedLogins` small, and never put
 > secrets in the repository. See [Security](#security).
+
+## Demo
+
+No GitHub account needed:
+
+```bash
+npm run demo -- --keep
+```
+
+The script creates a temporary bare repository, runs one ticket with a real
+OpenCode model in `local` delivery mode, and prints the generated file and
+commit. `--keep` leaves the temporary directory in place for inspection.
 
 ## How it works
 
