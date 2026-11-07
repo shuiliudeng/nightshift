@@ -1,0 +1,36 @@
+{
+  "name": "nightshift",
+  "version": "0.1.0",
+  "description": "An always-on, proactive coding agent for one GitHub repository, built on OpenCode.",
+  "type": "module",
+  "bin": {
+    "nightshift": "./src/cli.ts"
+  },
+  "files": [
+    "src",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node src/cli.ts",
+    "dev": "node src/cli.ts",
+    "test": "node --test \"tests/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "keywords": [
+    "opencode",
+    "agent",
+    "github",
+    "automation",
+    "coding-agent"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "repo": "your-name/your-repo",
+  "agentLogin": "nightshift-bot",
+  "allowedLogins": ["your-name"],
+  "model": "opencode-go/glm-5.3",
+  "baseBranch": "main",
+  "maxWorkers": 1,
+  "pollSeconds": 60,
+  "workspaceDir": ".nightshift/workspaces",
+  "stateDir": ".nightshift/state",
+  "delivery": {
+    "mode": "pr",
+    "comment": true
+  },
+  "git": {
+    "authorName": "Nightshift",
+    "authorEmail": "nightshift@users.noreply.github.com"
+  },
+  "opencode": {
+    "extraArgs": [],
+    "timeoutMinutes": 30
+  },
+  "prompt": {
+    "extraInstructions": ""
+  }
+}
