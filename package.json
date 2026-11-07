@@ -28,6 +28,14 @@
     "automation",
     "coding-agent"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/shuiliudeng/nightshift.git"
+  },
+  "homepage": "https://github.com/shuiliudeng/nightshift#readme",
+  "bugs": {
+    "url": "https://github.com/shuiliudeng/nightshift/issues"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.10.0",
